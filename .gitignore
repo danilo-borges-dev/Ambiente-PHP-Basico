@@ -1,0 +1,51 @@
+# Arquivos de ambiente
+# .env
+
+# Logs
+*.log
+error_log
+php_errors.log
+
+# Cache do PHP
+*.php~
+*.swp
+
+# Cache de IDEs (como PHPStorm)
+.idea/
+.vscode/
+
+# Cache do Composer (caso use futuramente)
+vendor/
+
+# Cache do Nginx ou arquivos temporários
+docker/nginx/*.pid
+docker/nginx/*temp/
+
+# Volumes do PostgreSQL
+docker/postgresql/pgdata/
+docker/postgresql/pgadmin_data/
+
+# Volumes de runtime ou mount
+/tmp/
+*.sock
+
+# Arquivos de backup
+*.bak
+*.tmp
+*.old
+
+# Node.js (caso use algum frontend no futuro)
+node_modules/
+
+# Docker
+**/Dockerfile
+**/docker-compose.override.yml
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Cobertura de testes
+coverage/
+phpunit.xml
+phpunit.xml.dist
