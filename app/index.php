@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-// Título da página
+ Título da página
 echo "<h2>Verificando conexão com o banco de dados PostgreSQL</h2>";
 
 try {
@@ -15,3 +15,4 @@ try {
 } catch (PDOException $e) {
     echo "<p style='color: red;'><strong>❌ Falha na conexão:</strong> " . htmlspecialchars($e->getMessage()) . "</p>";
 }
+

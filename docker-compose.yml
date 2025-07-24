@@ -2,6 +2,7 @@ services:
   # php
   php:
     container_name: php_container
+    restart: always
     build:
       context: ./docker/php
       dockerfile: Dockerfile
@@ -16,6 +17,7 @@ services:
   # nginx
   nginx:
     container_name: nginx_container
+    restart: always
     build:
       context: ./docker/nginx
       dockerfile: Dockerfile

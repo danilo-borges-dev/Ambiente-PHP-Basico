@@ -29,6 +29,9 @@ RUN apt-get update && apt-get install -y \
 # Instala Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
+# Instala o nano e limpa cache do apt
+RUN apt-get update && apt-get install -y nano && apt-get clean
+
 # Expor a porta padrão do php-fpm
 EXPOSE 9000
 
